@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY FIRST REAL PROJECT</title>
+
+    <style>
+
+       * {margin: 0;}
+
+      /*HEADER*/
+      ul {   list-style-type: none;
+             display: flex;}
+
+      ul li { margin-left: 15px;
+              font-family: system-ui;}
+
+      .menu_tel {display: none; height: 55px;}
+
+      
+
+
+      
+         /* DATA, SCIENCE */
+       .container { max-width: auto ;
+                     margin: 10px auto;
+                     height: 80px;
+                     padding: 0 50px;
+                     color: white;
+                     font-family: system-ui;
+                     background-image: url(./assets/images/Wallpaper/WallPaper.jpg);
+                     height: 230px;
+                     width: auto;
+                     background-size: cover;
+                     text-align: center;
+                    }
+
+        @font-face { font-family: "Radikal Light";
+                     src: url(./assets/fonts/Radikal\ Light.otf); }
+        @font-face { font-family: "Radikal Black";
+                     src: url(./assets/fonts/Radikal\ Black.otf); }
+
+        .BestWeb {font-family: "Radikal Light";
+                  font-size: 25px;}
+        h2 > strong { font-family: "Radikal Medium" ;
+                      font-size: 35px;}
+
+
+     /* TABLE & Alert */
+       .all_desktop {display: none;}
+       .all_mobile {display: none;}
+       .LIGAT_DESKTOP {display: none;}
+       .LIGAT_MOBILE {display: none;}
+  
+       .clubpl {width: 30px; }
+
+       .pl { width: 100px;
+             padding: 10px 10px;
+             image-orientation: center; }
+       .percentars {background-color: rgb(255, 177, 55);}
+       .percentmnc {background-color: rgb(255, 208, 87);}
+       .percentmnu {background-color: rgb(255, 252, 237);}
+
+       .LG { width: 100px;
+             padding: 15px 10px;
+             image-orientation: center; }
+       .percentbrc {background-color: rgb(255, 160, 48);}
+       .percentrm {background-color: rgb(255, 220, 110);}
+       .percentrs {background-color: rgb(255, 254, 249);}
+
+       .SA { width: 66px;
+             padding: 3px 0px 0px 5px;
+             image-orientation: center; }
+       .percentnp {background-color: rgb(255, 131, 46);}
+       .percentin {background-color: rgb(255, 246, 201);}
+       .percentmil {background-color: rgb(255, 250, 224);}
+
+       .stilizo-tabelen {
+                          background-color: rgb(165, 200, 247); 
+                          margin: 10px;
+                          font-size: 15px;
+                          font-family: sans-serif;
+                          max-width: 400px;
+                          box-shadow: 0 0 10px rgba(12, 12, 12, 0.363);
+                          text-align: center;
+                          border-collapse: collapse;                            
+                        }
+        
+        .other_4 {font-size: 13px;}
+        .zero    {font-size: 13px;}
+
+        .first { background-color:  rgba(255, 1, 91);
+                 color: rgb(243, 241, 241);
+                 font-size: 14px;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 padding: 55px;
+                 text-align: center;} 
+
+        a { text-decoration: none; 
+            color: black;
+            text-align: left;}
+        a:hover {color: white;}
+
+        .second {        
+                  background-color: rgb(255, 255, 255);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .third {  background-color: rgb(238, 234, 234);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .fourth { background-color: rgb(255, 255, 255);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .fifth {  background-color: rgb(238, 234, 234);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .sixth {  background-color: rgb(255, 255, 255);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .seventh {  background-color: rgb(238, 234, 234);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+
+        .second:hover {background-color: rgb(135, 135, 135);
+                       color: white;}
+        .third:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .fourth:hover {background-color: rgb(135, 135, 135);
+                       color: white;}
+        .fifth:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .sixth:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .seventh:hover {background-color: rgb(135, 135, 135);
+                        color: white;}
+
+     /* telefon */
+        @media (max-width: 924px) 
+            {
+               header { height: 70px;
+                        padding: 0px 50px;
+                        background-color: rgb(227, 236, 245);
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;}
+                        
+                .all_mobile { margin: auto;
+                              display: flex;    
+                              padding: 20px 10px;
+                              border-bottom:2pt solid rgb(200, 200, 200);
+                              border-top: 2px solid rgb(200, 200, 200);
+                              background-color: rgb(240, 240, 240);
+                              justify-content: center;} 
+
+                .Nderim_Data {height: 80px;}
+                ul {display: none;}
+                .menu_tel {display: flex; justify-content: right;}  
+                .LIGAT_MOBILE {display: block;  justify-content: end; }
+
+
+
+                 /* ALERT */
+                .alert_alert {display: flex;
+                               justify-content: center; }
+
+                .alert_table { font-size: 16px;
+                               text-align: center; 
+                               margin: 10px 30px;
+                               width: 200px; 
+                               border-collapse: collapse;    
+                               border-bottom: 1px solid rgb(245, 241, 241);       
+                               display: flex;}
+
+                .alert1 { font-size: 19px;
+                          background-color: black;
+                          color: rgb(252, 122, 128);
+                          padding: 10px;}
+
+               .alertimg  {width: 25px; padding: 1px 5px; }
+               .guglli    {background-color: rgb(245, 241, 241);}
+               .img_alertgif {width: 200px;}
+            }
+
+        /* desktop */
+        @media (min-width: 925px)
+            {
+                header { height: 70px;
+                         padding: 0 50px;
+                         background-color: rgb(227, 236, 245);
+                         display: flex;
+                         flex-direction: row;
+                         justify-content: center;
+                         align-items: center;}
+            
+               .all_desktop { margin: auto;
+                              display: flex;    
+                              padding: 20px 10px;
+                              border-bottom:2pt solid rgb(200, 200, 200);
+                              border-top: 2px solid rgb(200, 200, 200);
+                              background-color: rgb(240, 240, 240);
+                              justify-content: center;}         
+
+               .rrjetet_sociale { display: flex;
+                                  justify-content: center;
+                                  background-color: rgb(245, 250, 245);
+                                  margin: 0px;
+                                  padding: 5px; 
+                                }
+
+                .fb_logo {width: 25px;}
+                                  
+                .Nderim_Data {height: 80px;}
+                a {font-size: 18px;}
+                .LIGAT_DESKTOP {display: block;}
+
+                   /* ALERT */
+                .alert_alert {display: flex;
+                       justify-content: center; }
+
+                    .alert_table { font-size: 18px;
+                             text-align: center; 
+                             margin: 10px 50px;
+                             width: 260px; 
+                             border-collapse: collapse;    
+                             border-bottom: 1px solid rgb(245, 241, 241);       
+                             display: flex;}
+
+                    .alert1 { font-size: 24px;
+                             background-color: black;
+                             color: rgb(252, 122, 128);
+                             padding: 10px;}
+
+                    .alertimg  {width: 33px; padding: 1px 5px;  padding: 11px;}
+                    .guglli    {background-color: rgb(245, 241, 241);}
+                    .img_alertgif {width: 300px;}
+            } 
+ 
+
+
+
+
+   /* RANKS */
+     .topwebvisited {width: 30px; }
+
+     .nelt {padding: 5px;}
+
+     .top_drivers {width: 36px; padding: 2px;}
+
+     .all_rank { margin: auto;
+                 display: flex;    
+                 padding: 20px 10px;
+                 border-bottom:2pt solid rgb(240, 240, 240);
+                 border-top: 2px solid rgb(240, 240, 240);
+                 background-color: rgb(252, 215, 217);
+                 justify-content: center; 
+               }
+
+    .Ranks {
+             background-color: rgb(165, 200, 247); 
+             margin: 10px;
+             font-size: 16px;
+             font-family: sans-serif;
+             max-width: 400px;
+             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+             text-align: center;
+             border-collapse: collapse;  
+       } 
+         
+     .hajtat {background-color:  rgb(0, 255, 135);
+              color: rgb(61, 25, 91);
+              font-size: 14px;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              padding: 55px;
+              text-align: center;} 
+
+        
+       a { text-decoration: none; 
+           color: black;
+           text-align: left;}
+       a:hover {color: white;}
+ 
+        .eDyta {  background-color: rgb(255, 255, 255);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .eTreta {  background-color: rgb(238, 234, 234);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .eKaterta { background-color: rgb(255, 255, 255);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .ePesta {  background-color: rgb(238, 234, 234);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .eGjashta {  background-color: rgb(255, 255, 255);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        
+        .eDyta:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .eTreta:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .eKaterta:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .ePesta:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .eGjashta:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+
+
+
+        /* a {text-decoration: none; color:rgb(146, 36, 131);} */
+
+       /* Source */
+        .linqet {font-size: 16px; color: black;}
+        i {display: flex;
+           justify-content: center; 
+           margin: 0px;
+           padding: 10px;
+           background-color: rgb(239, 239, 253);
+          }
+                         
+      
+    </style>
+</head>
+<body>
+
+    <header id="header_background">
+        <img class="Nderim_Data" src="./assets/images/LOGO/Nderim's Data 3.png" class="logo" alt="">
+    <nav>
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li> <a href="#">Tech</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Other</a></li>      
+            
+        </ul>
+        <!-- <img class="menu_tel" src="./assets/images/menu.png"  alt=""> -->
+    </nav>
+    <nav>
+        <img class="menu_tel" src="./assets/images/menu.png"  alt="">
+    </nav>
+    </header>
+
+    <div class="container">
+        <br>
+        <h2 class="BestWeb">The best new <br> web-site for;
+            <br>
+             <strong>DATA</strong>
+             <br>
+             <strong>STATISTICS </strong>
+             <br>
+             <strong>CORIOSITIES</strong></h2>    
+    </div>
+
+<br>
+
+<!--ALERT-->
+<div class="alert_alert">
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img class="img_alertgif" src="./assets/images/LOGO/alert-blink.gif">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table class="alert_table">
+            <tr>
+                <th  class="alert1"  colspan="3" rowspan="2" > Breaking News Alert:   <strong class="strong">Tech giants are firing </strong></th>
+
+            </tr>
+            <tr>
+ 
+            </tr>
+            <tr>
+                <td> <img class="alertimg" src="./assets/images/LOGO/Microsoft_logo.png" alt=""></td>
+                <td>Microsoft</td>
+                <td>10,000</td>
+                
+                
+            </tr>
+            <tr class="guglli">
+                <td > <img  class="alertimg" src="./assets/images/LOGO/gLogo1x1.png" alt=""></td>
+                <td =>Google</td>
+                <td>12,000</td>
+                
+                
+            </tr>
+            <tr>
+                <td><img class="alertimg" src="./assets/images/LOGO/Amazon_icon.png" alt=""></td>
+                <td>Amazon</td>
+                <td>18,000</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img class="img_alertgif" src="./assets/images/LOGO/alert-blink.gif">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<br>
+
+<div class="all_desktop">
+
+    <!--PREMIER (desktop)-->
+    <div class="LIGAT_DESKTOP">
+        <table name="PREMIER LEAGUE" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="pl"  src="./assets/images/LOGO/Premier_League_Logo.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the Premier League</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th > Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th >% </th>
+                    <th>Pts</th>
+                    <th>Mp</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/Arslogo1x1.png"  alt=""></td>
+                    <td width="30px" class="name"> <a href="https://www.arsenal.com/" target="_blank">Arsenal</a></td>
+                    <td class="percentars" width="60px" align="center">57 %</td>
+                    <td class="other" width="35px">47</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">15</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">1</td>
+                
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/mnclogo1x1.png" alt=""></td>
+                    <td class="name">  Man City</td>
+                    <td class="percentmnc" width="60px" align="center">38 %</td>
+                    <td class="other" width="35px">42</td>
+                    <td class="other_4" width="22px">19</td>
+                    <td class="other_4" width="22px">13</td>
+                    <td class="other_4" width="22px">3</td>
+                    <td class="other_4" width="18px">3</td>
+                    
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/mnulogo1x1.png" alt=""></td>
+                    <td class="name">Man Utd</td>
+                    <td class="percentmnu" width="60px" align="center">4 %</td>
+                    <td class="other" width="35px">39</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">12</td>
+                    <td class="other_4" width="22px">3</td>
+                    <td class="other_4" width="18px">4</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/nclogo1x1.png" alt=""></td>
+                    <td class="name">Newcastle</td>
+                    <td  width="60px" align="center">2 %</td>
+                    <td class="other" width="35px">38</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">10</td>
+                    <td class="other_4" width="22px">8</td>
+                    <td class="other_4" width="18px">1</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Lvrlogo1x1.png" alt=""></td>
+                    <td class="name">Liverpool</td>
+                    <td  width="60px" align="center">1 %</td>
+                    <td class="other" width="35px">28</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">8</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">6</td>
+    
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/BrgtLogo1x1.png" alt=""></td>
+                    <td class="name">Brighton</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                    <td class="other" width="35px">30</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">9</td>
+                    <td class="other_4" width="22px">3</td>
+                    <td class="other_4" width="18px">6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--LALIGA  (desktop)-->
+    <div class="LIGAT_DESKTOP">
+        <table name="LALIGA" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="LG"  src="./assets/images/LOGO/LaLiga.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the LaLiga</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th > Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th >% </th>
+                    <th>Pts</th>
+                    <th>Mp</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/BrcLogo.png"  alt=""></td>
+                    <td width="30px" class="name">Barcelona</a></td>
+                    <td class="percentbrc" width="60px" align="center">68 %</td>
+                    <td class="other" width="40px">41</td>
+                    <td class="other_4" width="22px">16</td>
+                    <td class="other_4" width="22px">13</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">1</td>
+                
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/RmLogo.png" alt=""></td>
+                    <td class="name"> R.Madrid</td>
+                    <td class="percentrm" width="60px" align="center">29 %</td>
+                    <td class="other" width="40px">38</td>
+                    <td class="other_4" width="22px">16</td>
+                    <td class="other_4" width="22px">12</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">2</td>
+                    
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/RsLogo.png" alt=""></td>
+                    <td class="name">R.Sociedad</td>
+                    <td class="percentrs" width="60px" align="center">2 %</td>
+                    <td class="other" width="40px">38</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">12</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">4</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Atl.MadridLogo.png" alt=""></td>
+                    <td class="name">Atl.Madrid</td>
+                    <td  width="60px" align="center">2 %</td>
+                    <td class="other" width="40px">31</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">9</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">5</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Villa_Logo.png" alt=""></td>
+                    <td class="name">Villarreal</td>
+                    <td  width="60px" align="center">1 %</td>
+                    <td class="other" width="40px">28</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">9</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">5</td>
+    
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Real-Betis-Logo.png" alt=""></td>
+                    <td class="name">Betis</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                    <td class="other" width="40px">30</td>
+                    <td class="other_4" width="22px">17</td>
+                    <td class="other_4" width="22px">8</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--SERIE A  (desktop)-->
+    <div class="LIGAT_DESKTOP">
+        <table name="SERIE A" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="SA"  src="./assets/images/LOGO/SERIEA.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the Seria A</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th> Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th>% </th>
+                    <th>Pts</th>
+                    <th>Mp</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/Napol Logo.png"  alt=""></td>
+                    <td width="30px" class="name">Napoli</a></td>
+                    <td class="percentnp" width="60px" align="center">83 %</td>
+                    <td class="other" width="40px">50</td>
+                    <td class="other_4" width="22px">19</td>
+                    <td class="other_4" width="22px">16</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">1</td>
+                
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/inter.png" alt=""></td>
+                    <td class="name"> Inter</td>
+                    <td class="percentin" width="60px" align="center">29 %</td>
+                    <td class="other" width="40px">37</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">12</td>
+                    <td class="other_4" width="22px">1</td>
+                    <td class="other_4" width="18px">5</td>
+                    
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/Milan Logo.png" alt=""></td>
+                    <td class="name">Milan</td>
+                    <td class="percentmil" width="60px" align="center">2 %</td>
+                    <td class="other" width="40px">38</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">11</td>
+                    <td class="other_4" width="22px">5</td>
+                    <td class="other_4" width="18px">2</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/LazioLogo.png" alt=""></td>
+                    <td class="name">Lazio</td>
+                    <td  width="60px" align="center">2 %</td>
+                    <td class="other" width="40px">34</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">10</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">4</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/AtalantaLG.png" alt=""></td>
+                    <td class="name">Atalanta</td>
+                    <td  width="60px" align="center">1 %</td>
+                    <td class="other" width="40px">34</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">10</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">4</td>
+    
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Roma_logo.png" alt=""></td>
+                    <td class="name">Roma</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                    <td class="other" width="40px">34</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">10</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+  </div>
+
+  <div class="all_mobile">
+
+    <!--PREMIER (mobile)-->
+    <div class="LIGAT_MOBILE">
+        <table name="PREMIER LEAGUE" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="pl"  src="./assets/images/LOGO/Premier_League_Logo.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the Premier League</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th > Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th >% </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/Arslogo1x1.png"  alt=""></td>
+                    <td width="30px" class="name"> <a href="https://www.arsenal.com/" target="_blank">Arsenal</a></td>
+                    <td class="percentars" width="60px" align="center">57 %</td>
+                </tr>
+
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/mnclogo1x1.png" alt=""></td>
+                    <td class="name">  Man City</td>
+                    <td class="percentmnc" width="60px" align="center">38 %</td>
+                </tr>
+
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/mnulogo1x1.png" alt=""></td>
+                    <td class="name">Man Utd</td>
+                    <td class="percentmnu" width="60px" align="center">4 %</td>
+                </tr>
+
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/nclogo1x1.png" alt=""></td>
+                    <td class="name">Newcastle</td>
+                    <td  width="60px" align="center">2 %</td>
+                </tr>
+
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Lvrlogo1x1.png" alt=""></td>
+                    <td class="name">Liverpool</td>
+                    <td  width="60px" align="center">1 %</td>
+                </tr>
+                
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/BrgtLogo1x1.png" alt=""></td>
+                    <td class="name">Brighton</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--LALIGA  (desktop)-->
+    <div class="LIGAT_MOBILE">
+        <table name="LALIGA" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="LG"  src="./assets/images/LOGO/LaLiga.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the LaLiga</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th > Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th >% </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/BrcLogo.png"  alt=""></td>
+                    <td width="30px" class="name">Barcelona</a></td>
+                    <td class="percentbrc" width="60px" align="center">68 %</td>                
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/RmLogo.png" alt=""></td>
+                    <td class="name"> R.Madrid</td>
+                    <td class="percentrm" width="60px" align="center">29 %</td>                    
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/RsLogo.png" alt=""></td>
+                    <td class="name">R.Sociedad</td>
+                    <td class="percentrs" width="60px" align="center">2 %</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Atl.MadridLogo.png" alt=""></td>
+                    <td class="name">Atl.Madrid</td>
+                    <td  width="60px" align="center">2 %</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Villa_Logo.png" alt=""></td>
+                    <td class="name">Villarreal</td>
+                    <td  width="60px" align="center">1 %</td>
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Real-Betis-Logo.png" alt=""></td>
+                    <td class="name">Betis</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--SERIE A  (desktop)-->
+    <div class="LIGAT_MOBILE">
+        <table name="SERIE A" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="SA"  src="./assets/images/LOGO/SERIEA.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the Seria A</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th> Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th>% </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/Napol Logo.png"  alt=""></td>
+                    <td width="30px" class="name">Napoli</a></td>
+                    <td class="percentnp" width="60px" align="center">83 %</td>
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/inter.png" alt=""></td>
+                    <td class="name"> Inter</td>
+                    <td class="percentin" width="60px" align="center">29 %</td>                  
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/Milan Logo.png" alt=""></td>
+                    <td class="name">Milan</td>
+                    <td class="percentmil" width="60px" align="center">2 %</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/LazioLogo.png" alt=""></td>
+                    <td class="name">Lazio</td>
+                    <td  width="60px" align="center">2 %</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/AtalantaLG.png" alt=""></td>
+                    <td class="name">Atalanta</td>
+                    <td  width="60px" align="center">1 %</td>    
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Roma_logo.png" alt=""></td>
+                    <td class="name">Roma</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+  </div>
+   
+ <!--RANKS--> 
+ <div class="all_rank">
+    <div>
+        <table class="Ranks">
+            <thead>
+                <td class="nelt" colspan="3"> Top web-site visited in the world</td>
+            </thead>
+            <thead>
+                <tr class="hajtat">
+                    <th>Rank</th>
+                    <th>Logo</th>
+                    <th>Web-sites</th>
+                </tr>
+            </thead>
+           <tbody>
+            <tr class="eDyta">
+                <td>1</td>
+                <td><img class="topwebvisited" src="./assets/images/LOGO/gLogo1x1.png" alt=""></td>
+                <td>Google</td>
+            </tr>
+            <tr class="eTreta">
+                <td>2</td>
+                <td><img class="topwebvisited" src="./assets/images/LOGO/yLogo1x1.png" alt=""></td>
+                <td>Youtube</td>
+            </tr>
+            <tr class="eKaterta">
+                <td>3</td>
+                <td><img class="topwebvisited" src="./assets/images/LOGO/fLogo1x1.png" alt=""></td>
+                <td>Facebook</td>
+            </tr>
+            <tr class="ePesta">
+                <td>4</td>
+                <td><img class="topwebvisited" src="./assets/images/LOGO/tLogo1x1.png" alt=""></td>
+                <td>Twitter</td>
+            </tr>
+            <tr class="eGjashta">
+                <td>5</td>
+                <td><img class="topwebvisited" src="./assets/images/LOGO/iLogo1x1.png" alt=""></td>
+                <td>Instagram</td>
+            </tr>
+           </tbody>
+        </table>
+    </div>
+
+    <div>
+        <table class="Ranks">
+            <thead>
+                <td class="nelt" colspan="3">The World's best cities for drivers</td>
+            </thead>
+            <thead>
+                <tr class="hajtat">
+                    <th>Rank</th>
+                    <th>Country</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+           <tbody>
+            <tr class="eDyta">
+                <td>1</td>
+                <td><img class="top_drivers" src="./assets/images/flags/Cananda2.png" alt="Canada"></td>
+                <td>Calgary</td>
+            </tr>
+            <tr class="eTreta">
+                <td>2</td>
+                <td><img class="top_drivers" src="./assets/images/flags/United Arab Emirates.png" alt=""></td>
+                <td>Dubai</td>
+            </tr>
+            <tr class="eKaterta">
+                <td>3</td>
+                <td><img class="top_drivers" src="./assets/images/flags/Cananda2.png" alt="Canada"></td>
+                <td>Ottawak</td>
+            </tr>
+            <tr class="ePesta">
+                <td>4</td>
+                <td><img class="top_drivers" src="./assets/images/flags/Switzerland.png" alt=""></td>
+                <td>Bern</td>
+            </tr>
+            <tr class="eGjashta">
+                <td>5</td>
+                <td><img class="top_drivers" src="./assets/images/flags/USA.png" alt=""></td>
+                <td>El Paso</td>
+            </tr>
+           </tbody>
+        </table>
+    </div>
+
+    <div>
+        <table class="Ranks">
+            <thead>
+                <td class="nelt" colspan="3">The best quality of life 2023</td>
+            </thead>
+            <thead>
+                <tr class="hajtat">
+                    <th>Rank</th>
+                    <th>Country</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+           <tbody>
+            <tr class="eDyta">
+                <td>1</td>
+                <td><img class="top_drivers" src="./assets/images/flags/Netherland.png" alt="Canada"></td>
+                <td>Netherland</td>
+            </tr>
+            <tr class="eTreta">
+                <td>2</td>
+                <td><img class="top_drivers" src="./assets/images/flags/denmark.png" alt=""></td>
+                <td>Denmark</td>
+            </tr>
+            <tr class="eKaterta">
+                <td>3</td>
+                <td><img class="top_drivers" src="./assets/images/flags/Switzerland.png" alt="Canada"></td>
+                <td>Switzerland</td>
+            </tr>
+            <tr class="ePesta">
+                <td>4</td>
+                <td><img class="top_drivers" src="./assets/images/flags/luxembourg.png" alt=""></td>
+                <td>Luxembourg</td>
+            </tr>
+            <tr class="eGjashta">
+                <td>5</td>
+                <td><img class="top_drivers" src="./assets/images/flags/finland.png" alt=""></td>
+                <td>Finland</td>
+            </tr>
+           </tbody>
+        </table>
+    </div>
+ </div> 
+
+</br>
+</br>
+
+    <footer>
+        <ul class="rrjetet_sociale">
+            <li><a href="#"><img class="fb_logo" src="./assets/images/LOGO/tLogo1x1.png" alt=""></a></li>
+            <li><a href="#"><img class="fb_logo" src="./assets/images/LOGO/yLogo1x1.png" alt=""></a></li>
+            <li><a href="#"><img class="fb_logo" src="./assets/images/LOGO/fLogo1x1.png" alt=""></a></li>
+            <li>
+        </ul>
+    </footer>
+
+
+ <i>
+    source; <a class="linqet" href="https://fivethirtyeight.com/">Five Thirty Eight</a>,  <a class="linqet" href="https://twitter.com/stats_feed">World Stats</a>
+ </i>
+
+ <br>
+
+</body>
+</html>
