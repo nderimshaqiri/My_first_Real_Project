@@ -11,30 +11,29 @@
        * {margin: 0;}
 
       /*HEADER*/
-      ul {   list-style-type: none;
-             display: flex;}
+      ul { list-style-type: none;
+           display: flex;}
 
-      ul li { margin-left: 15px;
-              font-family: system-ui;}
+      li { margin-left: 15px;
+            font-family: system-ui;}
 
       .menu_tel {display: none; height: 55px;}
 
-      
-
+ 
 
       
          /* DATA, SCIENCE */
-       .container { max-width: auto ;
-                     margin: 10px auto;
-                     height: 80px;
-                     padding: 0 50px;
-                     color: white;
-                     font-family: system-ui;
-                     background-image: url(./assets/images/Wallpaper/WallPaper.jpg);
-                     height: 230px;
-                     width: auto;
-                     background-size: cover;
-                     text-align: center;
+       .container { 
+                    margin: 10px auto;
+                    height: 80px;
+                    padding: 0 50px;
+                    color: white;
+                    font-family: system-ui;
+                    background-image: url(./assets/images/Wallpaper/WallPaper.jpg);
+                    height: 230px;
+                    width: auto;
+                    background-size: cover;
+                    text-align: center;
                     }
 
         @font-face { font-family: "Radikal Light";
@@ -154,7 +153,7 @@
         .seventh:hover {background-color: rgb(135, 135, 135);
                         color: white;}
 
-     /* telefon */
+     /* tablet */
         @media (max-width: 924px) 
             {
                header { height: 70px;
@@ -209,9 +208,12 @@
                          padding: 0 50px;
                          background-color: rgb(227, 236, 245);
                          display: flex;
+                         justify-content: center;
                          flex-direction: row;
                          justify-content: center;
-                         align-items: center;}
+                        align-items: center;
+                        }
+       
             
                .all_desktop { margin: auto;
                               display: flex;    
@@ -372,7 +374,6 @@
             <li><a href="#">People</a></li>
             <li><a href="#">Travel</a></li>
             <li><a href="#">Other</a></li>      
-            
         </ul>
         <!-- <img class="menu_tel" src="./assets/images/menu.png"  alt=""> -->
     </nav>
@@ -477,10 +478,10 @@
                     <td width="50px" >1.</td>
                     <td > <img class="clubpl" src="./assets/images/LOGO/Arslogo1x1.png"  alt=""></td>
                     <td width="30px" class="name"> <a href="https://www.arsenal.com/" target="_blank">Arsenal</a></td>
-                    <td class="percentars" width="60px" align="center">57 %</td>
-                    <td class="other" width="35px">47</td>
-                    <td class="other_4" width="22px">18</td>
-                    <td class="other_4" width="22px">15</td>
+                    <td class="percentars" width="60px" align="center">63 %</td>
+                    <td class="other" width="35px">50</td>
+                    <td class="other_4" width="22px">19</td>
+                    <td class="other_4" width="22px">16</td>
                     <td class="other_4" width="22px">2</td>
                     <td class="other_4" width="18px">1</td>
                 
@@ -489,10 +490,10 @@
                     <td width="50px">2.</td>
                     <td width="30px"><img class="clubpl" src="./assets/images/LOGO/mnclogo1x1.png" alt=""></td>
                     <td class="name">  Man City</td>
-                    <td class="percentmnc" width="60px" align="center">38 %</td>
-                    <td class="other" width="35px">42</td>
-                    <td class="other_4" width="22px">19</td>
-                    <td class="other_4" width="22px">13</td>
+                    <td class="percentmnc" width="60px" align="center">34 %</td>
+                    <td class="other" width="35px">45</td>
+                    <td class="other_4" width="22px">20</td>
+                    <td class="other_4" width="22px">14</td>
                     <td class="other_4" width="22px">3</td>
                     <td class="other_4" width="18px">3</td>
                     
@@ -501,33 +502,33 @@
                     <td width="50px"  >3.</td>
                     <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/mnulogo1x1.png" alt=""></td>
                     <td class="name">Man Utd</td>
-                    <td class="percentmnu" width="60px" align="center">4 %</td>
+                    <td class="percentmnu" width="60px" align="center">1.4 %</td>
                     <td class="other" width="35px">39</td>
-                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">19</td>
                     <td class="other_4" width="22px">12</td>
                     <td class="other_4" width="22px">3</td>
-                    <td class="other_4" width="18px">4</td>
+                    <td class="other_4" width="18px">5</td>
                 </tr>
                 <tr class="fifth">
                     <td width="50px" >4.</td>
                     <td width="30px"><img class="clubpl" src="./assets/images/LOGO/nclogo1x1.png" alt=""></td>
                     <td class="name">Newcastle</td>
-                    <td  width="60px" align="center">2 %</td>
-                    <td class="other" width="35px">38</td>
-                    <td class="other_4" width="22px">18</td>
+                    <td  width="60px" align="center">1.2 %</td>
+                    <td class="other" width="35px">39</td>
+                    <td class="other_4" width="22px">20</td>
                     <td class="other_4" width="22px">10</td>
-                    <td class="other_4" width="22px">8</td>
+                    <td class="other_4" width="22px">9</td>
                     <td class="other_4" width="18px">1</td>
                 </tr>
                 <tr class="sixth">
                     <td width="50px" >5.</td>
                     <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Lvrlogo1x1.png" alt=""></td>
                     <td class="name">Liverpool</td>
-                    <td  width="60px" align="center">1 %</td>
-                    <td class="other" width="35px">28</td>
-                    <td class="other_4" width="22px">18</td>
+                    <td  width="60px" align="center">1.1 %</td>
+                    <td class="other" width="35px">29</td>
+                    <td class="other_4" width="22px">19</td>
                     <td class="other_4" width="22px">8</td>
-                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="22px">5</td>
                     <td class="other_4" width="18px">6</td>
     
                 </tr>
@@ -536,10 +537,10 @@
                     <td width="30px"><img class="clubpl" src="./assets/images/LOGO/BrgtLogo1x1.png" alt=""></td>
                     <td class="name">Brighton</td>
                     <td  width="60px" align="center"> 1 % </td>
-                    <td class="other" width="35px">30</td>
+                    <td class="other" width="35px">31</td>
                     <td class="other_4" width="22px">18</td>
                     <td class="other_4" width="22px">9</td>
-                    <td class="other_4" width="22px">3</td>
+                    <td class="other_4" width="22px">4</td>
                     <td class="other_4" width="18px">6</td>
                 </tr>
             </tbody>
@@ -765,35 +766,35 @@
                     <td width="50px" >1.</td>
                     <td > <img class="clubpl" src="./assets/images/LOGO/Arslogo1x1.png"  alt=""></td>
                     <td width="30px" class="name"> <a href="https://www.arsenal.com/" target="_blank">Arsenal</a></td>
-                    <td class="percentars" width="60px" align="center">57 %</td>
+                    <td class="percentars" width="60px" align="center">53 %</td>
                 </tr>
 
                 <tr class="third">
                     <td width="50px">2.</td>
                     <td width="30px"><img class="clubpl" src="./assets/images/LOGO/mnclogo1x1.png" alt=""></td>
                     <td class="name">  Man City</td>
-                    <td class="percentmnc" width="60px" align="center">38 %</td>
+                    <td class="percentmnc" width="60px" align="center">34 %</td>
                 </tr>
 
                 <tr class="fourth">
                     <td width="50px"  >3.</td>
                     <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/mnulogo1x1.png" alt=""></td>
                     <td class="name">Man Utd</td>
-                    <td class="percentmnu" width="60px" align="center">4 %</td>
+                    <td class="percentmnu" width="60px" align="center">1.4 %</td>
                 </tr>
 
                 <tr class="fifth">
                     <td width="50px" >4.</td>
                     <td width="30px"><img class="clubpl" src="./assets/images/LOGO/nclogo1x1.png" alt=""></td>
                     <td class="name">Newcastle</td>
-                    <td  width="60px" align="center">2 %</td>
+                    <td  width="60px" align="center">1.2 %</td>
                 </tr>
 
                 <tr class="sixth">
                     <td width="50px" >5.</td>
                     <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Lvrlogo1x1.png" alt=""></td>
                     <td class="name">Liverpool</td>
-                    <td  width="60px" align="center">1 %</td>
+                    <td  width="60px" align="center">1.1 %</td>
                 </tr>
                 
                 <tr class="seventh">
@@ -1062,13 +1063,16 @@
             <li><a href="#"><img class="fb_logo" src="./assets/images/LOGO/yLogo1x1.png" alt=""></a></li>
             <li><a href="#"><img class="fb_logo" src="./assets/images/LOGO/fLogo1x1.png" alt=""></a></li>
             <li>
+            <li>
+                <i>
+                    source; <a class="linqet" href="https://fivethirtyeight.com/">Five Thirty Eight</a>,  <a class="linqet" href="https://twitter.com/stats_feed">World Stats</a>
+                </i>
+            </li>
         </ul>
     </footer>
 
 
- <i>
-    source; <a class="linqet" href="https://fivethirtyeight.com/">Five Thirty Eight</a>,  <a class="linqet" href="https://twitter.com/stats_feed">World Stats</a>
- </i>
+
 
  <br>
 
