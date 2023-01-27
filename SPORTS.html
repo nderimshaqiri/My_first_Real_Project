@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTS</title>
+
+    <style>
+
+        @font-face { font-family: "Radikal Light";
+                     src: url(./assets/fonts/Radikal\ Light.otf); }
+
+              /*HEADER*/
+      ul { list-style-type: none;
+           display: flex;
+           }
+
+      li { margin-left: 25px;
+            font-family: system-ui;}
+
+      .menu_tel {display: none; height: 55px;}
+
+               /* SPOORTS */
+               .container { 
+                    margin: 10px auto;
+                    height: 80px;
+                    padding: 10px 50px;
+                    color: rgb(253, 253, 253);
+                    font-family: system-ui;
+                    background-image: url(./assets/images/Wallpaper/sports3.jpg);
+                    height: 230px;
+                    width: auto;
+                    background-size: cover;
+                    text-align: center;
+                    }
+
+        h2 > strong { font-family: "Radikal Light";
+                      font-size: 30px;}
+
+
+
+
+
+    /* TABLE & Alert */
+       .all_desktop {display: none;}
+       .all_mobile {display: none;}
+       .LIGAT_DESKTOP {display: none;}
+       .LIGAT_MOBILE {display: none;}
+
+       .goalscorer_pl_grid {display: none;}
+  
+       .clubpl {width: 30px; }
+
+       .pl { width: 100px;
+             padding: 10px 10px;
+             image-orientation: center; }
+       .percentars {background-color: rgb(255, 177, 55);}
+       .percentmnc {background-color: rgb(255, 208, 87);}
+       .percentmnu {background-color: rgb(255, 252, 237);}
+
+       .LG { width: 100px;
+             padding: 15px 10px;
+             image-orientation: center; }
+       .percentbrc {background-color: rgb(255, 160, 48);}
+       .percentrm {background-color: rgb(255, 220, 110);}
+       .percentrs {background-color: rgb(255, 254, 249);}
+
+       .SA { width: 66px;
+             padding: 3px 0px 0px 5px;
+             image-orientation: center; }
+       .percentnp {background-color: rgb(255, 131, 46);}
+       .percentin {background-color: rgb(255, 246, 201);}
+       .percentmil {background-color: rgb(255, 250, 224);}
+
+       .stilizo-tabelen {
+                          background-color: rgb(165, 200, 247); 
+                          margin: 10px;
+                          font-size: 15px;
+                          font-family: sans-serif;
+                          max-width: 400px;
+                          box-shadow: 0 0 10px rgba(12, 12, 12, 0.363);
+                          text-align: center;
+                          border-collapse: collapse;
+                        }
+
+
+        
+        
+        .other_4 {font-size: 13px;}
+        .zero    {font-size: 13px;}
+
+        .first { background-color:  rgba(255, 1, 91);
+                 color: rgb(243, 241, 241);
+                 font-size: 14px;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 padding: 55px;
+                 text-align: center;} 
+
+        a { text-decoration: none; 
+            color: black;
+            text-align: left;}
+        a:hover {color: white;}
+
+        .second {        
+                  background-color: rgb(255, 255, 255);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .third {  background-color: rgb(238, 234, 234);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .fourth { background-color: rgb(255, 255, 255);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .fifth {  background-color: rgb(238, 234, 234);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .sixth {  background-color: rgb(255, 255, 255);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+        .seventh {  background-color: rgb(238, 234, 234);
+                  transition-delay: 0.1s;
+                  transition-duration: 0.1s;
+                  transition-property: all;
+                  transition-timing-function: ease-in;
+                  transition: 0.1s 0.1s all ease-in;}
+
+        .second:hover {background-color: rgb(135, 135, 135);
+                       color: white;}
+        .third:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .fourth:hover {background-color: rgb(135, 135, 135);
+                       color: white;}
+        .fifth:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .sixth:hover {background-color: rgb(135, 135, 135);
+                      color: white;}
+        .seventh:hover {background-color: rgb(135, 135, 135);
+                        color: white;}
+
+
+     /* TELEFON */
+        @media only screen and (max-width: 420px) 
+            {
+               header { height: 70px;
+                        padding: 0px 50px;
+                        background-color: rgb(227, 236, 245);
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;}
+                        
+                .all_desktop { 
+                              display: flex;    
+                              flex-direction: column;
+                              padding: 20px 10px;
+                              border-bottom:2pt solid rgb(200, 200, 200);
+                              border-top: 2px solid rgb(200, 200, 200);
+                              background-color: rgb(240, 240, 240);
+                              justify-content:center;
+                              align-items: center;
+                            }  
+                            
+           
+                .Nderim_Data {height: 80px;}
+                ul {display: none;}
+                .menu_tel {display: flex; justify-content: right;}  
+                .LIGAT_DESKTOP {display: block;  justify-content: end; }
+
+                .goalscorer_pl_grid {
+                              display: grid;
+                              grid-template-columns: 1fr;
+                              gap: 10px;
+                            }
+
+                .topgl {
+                          text-align: center;
+                          background-color: #efeff1;
+                          border-radius: 5px 25px 0 25px;
+                          padding: 8px 0 ; 
+                          font-size: 20px;
+                          font-family: "Radikal Medium";
+                          background-image: url(./assets/images/Player/background_gif.gif);  
+                       }
+
+                .goalscorer_pl_cart {
+                                      align-items: center;    
+                                      justify-self: center;  
+                                      padding: 5px 0 0 0; 
+                                      border-radius: 20px; 
+                                      background-color: #eceef3;
+                                      text-align: center;   
+                                      width: 300px;   
+                                    }
+               
+               .goalscorer_ll_grid {
+                                      display: grid;
+                                      grid-template-columns: 1fr;
+                                      gap: 10px;
+                                    }
+                            
+                .topgll {
+                         text-align: center;
+                         background-color: #efeff1;
+                         border-radius: 5px 25px 0 25px;
+                         padding: 8px 0 ; 
+                         font-size: 20px;
+                         font-family: "Radikal Medium";
+                         background-image: url(./assets/images/Player/laliga-logo.jpg);  
+                       }
+        
+                .goalscorer_ll_cart {
+                            align-items: center;    
+                            justify-self: center;  
+                            padding: 5px 0 0 0; 
+                            border-radius: 20px; 
+                            background-color: #d8dff3;
+                            text-align: center; 
+                            width: 300px;     
+                           }
+
+                 .player_name {
+                                font-size: 16px;
+                                font-family: "Radikal";
+                             }  
+
+                 .etihad {border-bottom: 2px solid rgb(68, 70, 68); 
+                          width: 80%;
+                           }
+
+                 .goals {
+                          font-family: "Radikal Medium";
+                          font-size: 16px;
+                         }
+
+                 .assists {
+                            font-family: "Radikal Thin";
+                            font-size: 14px;
+                          } 
+
+                     }
+
+
+     /* tablet */
+        @media only screen and (min-width: 421px) 
+            {
+               header { height: 70px;
+                        padding: 0px 50px;
+                        background-color: rgb(227, 236, 245);
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;}
+                        
+                .all_mobile { margin: auto;
+                              display: flex;    
+                              padding: 20px 10px;
+                              border-bottom:2pt solid rgb(200, 200, 200);
+                              border-top: 2px solid rgb(200, 200, 200);
+                              background-color: rgb(240, 240, 240);
+                              justify-content: center;} 
+
+                .Nderim_Data {height: 80px;}
+                  
+                .LIGAT_MOBILE {display: block;  justify-content: end; }
+
+                .goalscorer_pl_grid {
+                              display: grid;
+                              grid-template-columns: 1fr 1fr;
+                              gap: 15px;
+                            }
+
+                .topgl {
+                          text-align: center;
+                          background-color: #efeff1;
+                          border-radius: 5px 25px 0 25px;
+                          padding: 8px 0 ; 
+                          font-size: 30px;
+                          font-family: "Radikal Medium";
+                          background-image: url(./assets/images/Player/background_gif.gif);  
+                       }
+
+                .goalscorer_pl_cart {
+                                      align-items: center;    
+                                      justify-self: center;  
+                                      padding: 5px 0 0 0; 
+                                      border-radius: 20px; 
+                                      background-color: #eceef3;
+                                      text-align: center;   
+                                      width: 350px;   
+                                    }
+               
+
+               .goalscorer_ll_grid {
+                                      display: grid;
+                                      grid-template-columns: 1fr 1fr;
+                                      gap: 15px;
+                                      justify-content:space-around;
+                                    }
+                            
+                .topgll {
+                         text-align: center;
+                         background-color: #efeff1;
+                         border-radius: 5px 25px 0 25px;
+                         padding: 8px 0 ; 
+                         font-size: 20px;
+                         font-family: "Radikal Medium";
+                         background-image: url(./assets/images/Player/laliga-logo.jpg);  
+                       }
+        
+                .goalscorer_ll_cart {
+                            align-items: center;    
+                            justify-self: center;
+                            padding: 5px 0 0 0; 
+                            border-radius: 20px; 
+                            background-color: #d8dff3;
+                            text-align: center; 
+                            width: 350px;     
+                           }
+
+                 .player_name {
+                                font-size: 16px;
+                                font-family: "Radikal";
+                             }  
+
+                 .etihad {border-bottom: 2px solid rgb(68, 70, 68); 
+                          width: 80%;
+                           }
+
+                 .goals {
+                          font-family: "Radikal Medium";
+                          font-size: 18px;
+                         }
+
+                 .assists {
+                            font-family: "Radikal Thin";
+                            font-size: 14px;
+                          } 
+
+            }
+
+        /* desktop */
+        @media (min-width: 1000px)
+            {
+                header { height: 70px;
+                         padding: 0 50px;
+                         background-color: rgb(227, 236, 245);
+                         display: flex;
+                         justify-content: space-around;
+                         flex-direction: row;
+                         align-items: center;
+                        }
+
+               .PREMIER_LEAGUE {margin: 10px;}    
+                 
+               .all_desktop { 
+                              display: flex;    
+                              padding: 20px 10px;
+                              border-bottom:2pt solid rgb(200, 200, 200);
+                              border-top: 2px solid rgb(200, 200, 200);
+                              background-color: rgb(240, 240, 240);
+                              justify-content:center;
+                            }    
+
+                .all_mobile {display: none;}     
+
+               .rrjetet_sociale { display: flex;
+                                  justify-content: center;
+                                  background-color: rgb(245, 250, 245);
+                                  margin: 0px;
+                                  padding: 5px; 
+                                  align-items: center;
+                                }
+
+                .person {
+                           display: flex; 
+                           width: 90px;
+                           justify-content: flex-start;
+                           align-items: center;
+                        }                
+
+                .fb_logo {width: 25px;}
+                                  
+                .Nderim_Data {height: 80px;}
+                a {font-size: 18px;}
+                .LIGAT_DESKTOP {display: inline-block;}
+
+
+                .goalscorer_pl_grid {
+                              display: grid;
+                              grid-template-columns: 1fr 1fr 1fr;
+                              gap: 15px;
+                            }
+
+                .topgl {
+                          text-align: center;
+                          background-color: #efeff1;
+                          border-radius: 5px 25px 0 25px;
+                          padding: 8px 0 ; 
+                          font-size: 30px;
+                          font-family: "Radikal Medium";
+                          background-image: url(./assets/images/Player/background_gif.gif);  
+                       }
+
+                .goalscorer_pl_cart {
+                                      align-items: center;    
+                                      justify-self: center;  
+                                      padding: 5px 0 0 0; 
+                                      border-radius: 20px; 
+                                      background-color: #eceef3;
+                                      text-align: center;   
+                                      width: 300px;   
+                                    }
+               
+
+               .goalscorer_ll_grid {
+                                      display: grid;
+                                      grid-template-columns: 1fr 1fr 1fr;
+                                      gap: 15px;
+                                      justify-content:space-around;
+                                    }
+                            
+                .topgll {
+                         text-align: center;
+                         background-color: #efeff1;
+                         border-radius: 5px 25px 0 25px;
+                         padding: 8px 0 ; 
+                         font-size: 35px;
+                         font-family: "Radikal Medium";
+                         color: #ffffff;
+                         background-image: url(./assets/images/Player/laliga-logo.jpg);  
+                       }
+        
+                .goalscorer_ll_cart {
+                            align-items: center;    
+                            justify-self: center;
+                            padding: 5px 0 0 0; 
+                            border-radius: 20px; 
+                            background-color: #d8dff3;
+                            text-align: center; 
+                            width: 300px;     
+                           }
+
+                 .player_name {
+                                font-size: 19px;
+                                font-family: "Radikal";
+                             }  
+
+                 .etihad {border-bottom: 2px solid rgb(68, 70, 68); 
+                          width: 80%;
+                           }
+
+                 .goals {
+                          font-family: "Radikal Medium";
+                          font-size: 20px;
+                         }
+
+                 .assists {
+                            font-family: "Radikal Thin";
+                            font-size: 16px;
+                          } 
+            } 
+
+
+    </style>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header id="header_background">
+       <a href="./MY_FIRST_REAL_PROJECT.html"> <img class="Nderim_Data" src="./assets/images/LOGO/Nderim's Data 3.png" class="logo" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="./MENU.html">Home</a></li>
+                <li> <a href="./TECH.html">Tech</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="./SPORTS.html">Sports</a></li>
+                <li><a href="./WORLD.html">World</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Other</a></li>      
+            </ul>
+            <!-- <img class="menu_tel" src="./assets/images/menu.png"  alt=""> -->
+        </nav>
+        <nav>
+            <img class="menu_tel" src="./assets/images/menu.png"  alt="">
+        </nav>
+    </header>
+
+    <!--BANNER-->
+    <div class="container">
+        <h2 class="BestSports">
+ 
+             <strong>Football</strong>
+             <br>
+             <strong>Tenis </strong>
+             <br>
+             <strong>Basketball</strong>
+             <br>
+             <strong>Athletic</strong>
+             <br>
+             <strong>Handball</strong>
+        </h2>    
+    </div>
+
+    
+<div class="all_desktop">
+    <!--PREMIER (desktop)-->
+    <div class="LIGAT_DESKTOP">
+        <table name="PREMIER_LEAGUE" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="pl"  src="./assets/images/LOGO/Premier_League_Logo.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the Premier League</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th > Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th >% </th>
+                    <th>Pts</th>
+                    <th>Mp</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/Arslogo1x1.png"  alt=""></td>
+                    <td width="30px" class="name"> <a href="https://www.arsenal.com/" target="_blank">Arsenal</a></td>
+                    <td class="percentars" width="60px" align="center">63 %</td>
+                    <td class="other" width="35px">50</td>
+                    <td class="other_4" width="22px">19</td>
+                    <td class="other_4" width="22px">16</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">1</td>
+                
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/mnclogo1x1.png" alt=""></td>
+                    <td class="name">  Man City</td>
+                    <td class="percentmnc" width="60px" align="center">34 %</td>
+                    <td class="other" width="35px">45</td>
+                    <td class="other_4" width="22px">20</td>
+                    <td class="other_4" width="22px">14</td>
+                    <td class="other_4" width="22px">3</td>
+                    <td class="other_4" width="18px">3</td>
+                    
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/mnulogo1x1.png" alt=""></td>
+                    <td class="name">Man Utd</td>
+                    <td class="percentmnu" width="60px" align="center">1.4 %</td>
+                    <td class="other" width="35px">39</td>
+                    <td class="other_4" width="22px">19</td>
+                    <td class="other_4" width="22px">12</td>
+                    <td class="other_4" width="22px">3</td>
+                    <td class="other_4" width="18px">5</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/nclogo1x1.png" alt=""></td>
+                    <td class="name">Newcastle</td>
+                    <td  width="60px" align="center">1.2 %</td>
+                    <td class="other" width="35px">39</td>
+                    <td class="other_4" width="22px">20</td>
+                    <td class="other_4" width="22px">10</td>
+                    <td class="other_4" width="22px">9</td>
+                    <td class="other_4" width="18px">1</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Lvrlogo1x1.png" alt=""></td>
+                    <td class="name">Liverpool</td>
+                    <td  width="60px" align="center">1.1 %</td>
+                    <td class="other" width="35px">29</td>
+                    <td class="other_4" width="22px">19</td>
+                    <td class="other_4" width="22px">8</td>
+                    <td class="other_4" width="22px">5</td>
+                    <td class="other_4" width="18px">6</td>
+    
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/BrgtLogo1x1.png" alt=""></td>
+                    <td class="name">Brighton</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                    <td class="other" width="35px">31</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">9</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--LALIGA  (desktop)-->
+    <div class="LIGAT_DESKTOP">
+        <table name="LALIGA" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="LG"  src="./assets/images/LOGO/LaLiga.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the LaLiga</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th > Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th >% </th>
+                    <th>Pts</th>
+                    <th>Mp</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/BrcLogo.png"  alt=""></td>
+                    <td width="30px" class="name">Barcelona</a></td>
+                    <td class="percentbrc" width="60px" align="center">68 %</td>
+                    <td class="other" width="40px">41</td>
+                    <td class="other_4" width="22px">16</td>
+                    <td class="other_4" width="22px">13</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">1</td>
+                
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/RmLogo.png" alt=""></td>
+                    <td class="name"> R.Madrid</td>
+                    <td class="percentrm" width="60px" align="center">29 %</td>
+                    <td class="other" width="40px">38</td>
+                    <td class="other_4" width="22px">16</td>
+                    <td class="other_4" width="22px">12</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">2</td>
+                    
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/RsLogo.png" alt=""></td>
+                    <td class="name">R.Sociedad</td>
+                    <td class="percentrs" width="60px" align="center">2 %</td>
+                    <td class="other" width="40px">38</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">12</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">4</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Atl.MadridLogo.png" alt=""></td>
+                    <td class="name">Atl.Madrid</td>
+                    <td  width="60px" align="center">2 %</td>
+                    <td class="other" width="40px">31</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">9</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">5</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Villa_Logo.png" alt=""></td>
+                    <td class="name">Villarreal</td>
+                    <td  width="60px" align="center">1 %</td>
+                    <td class="other" width="40px">28</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">9</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">5</td>
+    
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Real-Betis-Logo.png" alt=""></td>
+                    <td class="name">Betis</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                    <td class="other" width="40px">30</td>
+                    <td class="other_4" width="22px">17</td>
+                    <td class="other_4" width="22px">8</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--SERIE A  (desktop)-->
+    <div class="LIGAT_DESKTOP">
+        <table name="SERIE A" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="SA"  src="./assets/images/LOGO/SERIEA.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the Seria A</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th> Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th>% </th>
+                    <th>Pts</th>
+                    <th>Mp</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/Napol Logo.png"  alt=""></td>
+                    <td width="30px" class="name">Napoli</a></td>
+                    <td class="percentnp" width="60px" align="center">83 %</td>
+                    <td class="other" width="40px">50</td>
+                    <td class="other_4" width="22px">19</td>
+                    <td class="other_4" width="22px">16</td>
+                    <td class="other_4" width="22px">2</td>
+                    <td class="other_4" width="18px">1</td>
+                
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/inter.png" alt=""></td>
+                    <td class="name"> Inter</td>
+                    <td class="percentin" width="60px" align="center">29 %</td>
+                    <td class="other" width="40px">37</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">12</td>
+                    <td class="other_4" width="22px">1</td>
+                    <td class="other_4" width="18px">5</td>
+                    
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/Milan Logo.png" alt=""></td>
+                    <td class="name">Milan</td>
+                    <td class="percentmil" width="60px" align="center">2 %</td>
+                    <td class="other" width="40px">38</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">11</td>
+                    <td class="other_4" width="22px">5</td>
+                    <td class="other_4" width="18px">2</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/LazioLogo.png" alt=""></td>
+                    <td class="name">Lazio</td>
+                    <td  width="60px" align="center">2 %</td>
+                    <td class="other" width="40px">34</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">10</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">4</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/AtalantaLG.png" alt=""></td>
+                    <td class="name">Atalanta</td>
+                    <td  width="60px" align="center">1 %</td>
+                    <td class="other" width="40px">34</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">10</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">4</td>
+    
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Roma_logo.png" alt=""></td>
+                    <td class="name">Roma</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                    <td class="other" width="40px">34</td>
+                    <td class="other_4" width="22px">18</td>
+                    <td class="other_4" width="22px">10</td>
+                    <td class="other_4" width="22px">4</td>
+                    <td class="other_4" width="18px">4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+  </div>
+
+  <div class="all_mobile">
+
+    <!--PREMIER (mobile)-->
+    <div class="LIGAT_MOBILE">
+        <table name="PREMIER LEAGUE" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="pl"  src="./assets/images/LOGO/Premier_League_Logo.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the Premier League</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th > Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th >% </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/Arslogo1x1.png"  alt=""></td>
+                    <td width="30px" class="name"> <a href="https://www.arsenal.com/" target="_blank">Arsenal</a></td>
+                    <td class="percentars" width="60px" align="center">53 %</td>
+                </tr>
+
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/mnclogo1x1.png" alt=""></td>
+                    <td class="name">  Man City</td>
+                    <td class="percentmnc" width="60px" align="center">34 %</td>
+                </tr>
+
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/mnulogo1x1.png" alt=""></td>
+                    <td class="name">Man Utd</td>
+                    <td class="percentmnu" width="60px" align="center">1.4 %</td>
+                </tr>
+
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/nclogo1x1.png" alt=""></td>
+                    <td class="name">Newcastle</td>
+                    <td  width="60px" align="center">1.2 %</td>
+                </tr>
+
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Lvrlogo1x1.png" alt=""></td>
+                    <td class="name">Liverpool</td>
+                    <td  width="60px" align="center">1.1 %</td>
+                </tr>
+                
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/BrgtLogo1x1.png" alt=""></td>
+                    <td class="name">Brighton</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--LALIGA  (mobile)-->
+    <div class="LIGAT_MOBILE">
+        <table name="LALIGA" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="LG"  src="./assets/images/LOGO/LaLiga.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the LaLiga</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th > Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th >% </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/BrcLogo.png"  alt=""></td>
+                    <td width="30px" class="name">Barcelona</a></td>
+                    <td class="percentbrc" width="60px" align="center">68 %</td>                
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/RmLogo.png" alt=""></td>
+                    <td class="name"> R.Madrid</td>
+                    <td class="percentrm" width="60px" align="center">29 %</td>                    
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/RsLogo.png" alt=""></td>
+                    <td class="name">R.Sociedad</td>
+                    <td class="percentrs" width="60px" align="center">2 %</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Atl.MadridLogo.png" alt=""></td>
+                    <td class="name">Atl.Madrid</td>
+                    <td  width="60px" align="center">2 %</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Villa_Logo.png" alt=""></td>
+                    <td class="name">Villarreal</td>
+                    <td  width="60px" align="center">1 %</td>
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Real-Betis-Logo.png" alt=""></td>
+                    <td class="name">Betis</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--SERIE A  (mobile)-->
+    <div class="LIGAT_MOBILE">
+        <table name="SERIE A" class="stilizo-tabelen">
+            <thead>
+                <tr class="zero" align="left">
+                    <th  colspan="3"> <img class="SA"  src="./assets/images/LOGO/SERIEA.png" alt=""> </th>
+                    <th colspan="6" > Probability to win the Seria A</th>
+    
+                </tr>
+            </thead>
+            <thead>
+                <tr class="first" align="left">
+                    <th> Nr </th>
+                    <th colspan="2" align="center">Team</th>
+                    <th>% </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="second">
+                    <td width="50px" >1.</td>
+                    <td > <img class="clubpl" src="./assets/images/LOGO/Napol Logo.png"  alt=""></td>
+                    <td width="30px" class="name">Napoli</a></td>
+                    <td class="percentnp" width="60px" align="center">83 %</td>
+                </tr>
+                <tr class="third">
+                    <td width="50px">2.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/inter.png" alt=""></td>
+                    <td class="name"> Inter</td>
+                    <td class="percentin" width="60px" align="center">29 %</td>                  
+                </tr>
+                <tr class="fourth">
+                    <td width="50px"  >3.</td>
+                    <td width="30px"> <img class="clubpl" src="./assets/images/LOGO/Milan Logo.png" alt=""></td>
+                    <td class="name">Milan</td>
+                    <td class="percentmil" width="60px" align="center">2 %</td>
+                </tr>
+                <tr class="fifth">
+                    <td width="50px" >4.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/LazioLogo.png" alt=""></td>
+                    <td class="name">Lazio</td>
+                    <td  width="60px" align="center">2 %</td>
+                </tr>
+                <tr class="sixth">
+                    <td width="50px" >5.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/AtalantaLG.png" alt=""></td>
+                    <td class="name">Atalanta</td>
+                    <td  width="60px" align="center">1 %</td>    
+                </tr>
+                <tr class="seventh">
+                    <td width="50px">6.</td>
+                    <td width="30px"><img class="clubpl" src="./assets/images/LOGO/Roma_logo.png" alt=""></td>
+                    <td class="name">Roma</td>
+                    <td  width="60px" align="center"> 1 % </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+  </div>
+
+<br>
+<br>
+
+ <!--TOP GOAL SCORER PREMIER LEAGUE-->
+  <section id="goalscorer" class="goalscorer">
+    <div class="container2">
+        <h1 class="topgl">TOP goal scorers Premier League</h1>
+        <div class="goalscorer_pl_grid">
+
+            <div class="goalscorer_pl_cart">
+                <img class="etihad" src="./assets/images/Player/Haaland.png" alt="">
+                <h1 class="player_name"> Erling Haaland </h1>
+                <span class="goals">25 Goals</span>
+                <br>
+                <span class="assists">3 Assists</span>
+            </div>
+
+            <div class="goalscorer_pl_cart">
+                <img class="etihad" src="./assets/images/Player/Harry Kane.webp" alt="">
+                <h1 class="player_name">Harry Kane</h1>
+                <span class="goals">16 Goals</span>
+                <br>
+                <span class="assists">1 Assist</span>
+            </div>
+
+            <div class="goalscorer_pl_cart">
+                <img class="etihad" src="./assets/images/Player/Ivan Toney.png" alt="">
+                <h1 class="player_name">Ivan Toney</h1>
+                <span class="goals">13 Goals</span>
+                <br>
+                <span class="assists">3 Assists</span>
+            </div>
+
+            <div class="goalscorer_pl_cart">
+                <img class="etihad" src="./assets/images/Player/Aleksandar Mitrovic.png" alt="">
+                <h1 class="player_name">Aleksandar Mitrovic</h1>
+                <span class="goals">11 Goals</span>
+                <br>
+                <span class="assists">1 Assist</span>
+            </div>
+
+            <div class="goalscorer_pl_cart">
+                <img class="etihad" src="./assets/images/Player/Rodrigo.png" alt="">
+                <h1 class="player_name">Rodrigo</h1>
+                <span class="goals">10 Goals</span>
+                <br>
+                <span class="assists">1 Assist</span>
+            </div>
+            <div class="goalscorer_pl_cart">
+                <img class="etihad" src="./assets/images/Player/Marcus Rashford.png" alt="">
+                <h1 class="player_name">Marcus Rashford</h1>
+                <span class="goals">9 Goals</span>
+                <br>
+                <span class="assists">3 Assists</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+<!--TOP GOAL SCORER LALIGA-->
+<section id="goalscorer" class="goalscorer">
+    <div class="container2">
+        <h1 class="topgll">TOP goal scorers LALIGA</h1>
+        <div class="goalscorer_ll_grid">
+
+            <div class="goalscorer_ll_cart">
+                <img class="etihad" src="./assets/images/Player/Robert.png" alt="">
+                <h1 class="player_name">  Lewandowski </h1>
+                <span class="goals">13 Goals</span>
+                <br>
+                <span class="assists">4 Assists</span>
+            </div>
+
+            <div class="goalscorer_ll_cart">
+                <img class="etihad" src="./assets/images/Player/Joselu.png" alt="">
+                <h1 class="player_name">Joselu</h1>
+                <span class="goals">10 Goals</span>
+                <br>
+                <span class="assists">2 Assist</span>
+            </div>
+
+            <div class="goalscorer_ll_cart">
+                <img class="etihad" src="./assets/images/Player/Benzema.png" alt="">
+                <h1 class="player_name">Benzema</h1>
+                <span class="goals">9 Goals</span>
+                <br>
+                <span class="assists">1 Assists</span>
+            </div>
+
+            <div class="goalscorer_ll_cart">
+                <img class="etihad" src="./assets/images/Player/Aspas.png" alt="">
+                <h1 class="player_name">Aspas</h1>
+                <span class="goals">8 Goals</span>
+                <br>
+                <span class="assists">3 Assist</span>
+            </div>
+
+            <div class="goalscorer_ll_cart">
+                <img class="etihad" src="./assets/images/Player/Iglesias.png" alt="">
+                <h1 class="player_name">Iglesias</h1>
+                <span class="goals">8 Goals</span>
+                <br>
+                <span class="assists">2 Assist</span>
+            </div>
+            <div class="goalscorer_ll_cart">
+                <img class="etihad" src="./assets/images/Player/Muriqi.png" alt="">
+                <h1 class="player_name">Muriqi</h1>
+                <span class="goals">8 Goals</span>
+                <br>
+                <span class="assists">1 Assists</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+</br>
+
+<footer>
+    <ul class="rrjetet_sociale">
+        <li><a href="#"><img class="fb_logo" src="./assets/images/LOGO/tLogo1x1.png" alt=""></a></li>
+        <li><a href="#"><img class="fb_logo" src="./assets/images/LOGO/yLogo1x1.png" alt=""></a></li>
+        <li><a href="#"><img class="fb_logo" src="./assets/images/LOGO/fLogo1x1.png" alt=""></a></li>
+        <li>
+        <li>
+            <i>
+                source; <a class="linqet" href="https://fivethirtyeight.com/" target="_blank"> <br> Five Thirty Eight</a>
+            </i>
+        </li>
+    </ul>
+</footer>
+
+</br>
+   
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+              /*HEADER*/
+      ul { list-style-type: none;
+           display: flex;
+           }
+
+      li { margin-left: 25px;
+            font-family: system-ui;}
+
+      .menu_tel {display: none; height: 55px;}
+
+      a {text-decoration: none; color: black;}
+
+
+
+               /* DATA, SCIENCE */
+               .container { 
+                    margin: 15px auto 0px auto;
+                    height: 80px;
+                    padding: 10px 50px;
+                    color: white;
+                    font-family: system-ui;
+                    background-image: url(./assets/images/Wallpaper/WallPaper.jpg);
+                    height: 230px;
+                    width: auto;
+                    background-size: cover;
+                    text-align: center;
+                    }
+
+        @font-face { font-family: "Radikal Light";
+                     src: url(./assets/fonts/Radikal\ Light.otf); }
+        @font-face { font-family: "Radikal Black";
+                     src: url(./assets/fonts/Radikal\ Black.otf); }
+
+        .BestWeb {font-family: "Radikal Light";
+                  font-size: 25px;}
+        h2 > strong { font-family: "Radikal Medium" ;
+                      font-size: 35px;}
+
+     /* tablet */
+     @media (max-width: 924px) 
+            {
+               header { height: 70px;
+                        padding: 0px 50px;
+                        background-color: rgb(227, 236, 245);
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;}
+
+                .Nderim_Data {height: 80px;}
+                ul {display: none;}
+                .menu_tel {display: flex; justify-content: right;}  
+            }
+
+        /* desktop */
+        @media only screen and (max-width: 420px) 
+            {
+                header { height: 70px;
+                         padding: 0 50px;
+                         background-color: rgb(227, 236, 245);
+                         display: flex;
+                         justify-content: space-around;
+                         flex-direction: row;
+                         align-items: center;
+                        }
+
+               .PREMIER_LEAGUE {margin: 10px;}    
+                 
+               .all_desktop { 
+                              display: flex;    
+                              padding: 20px 10px;
+                              border-bottom:2pt solid rgb(200, 200, 200);
+                              border-top: 2px solid rgb(200, 200, 200);
+                              background-color: rgb(240, 240, 240);
+                              justify-content:center;
+                            }         
+
+               .rrjetet_sociale { display: flex;
+                                  justify-content: center;
+                                  background-color: rgb(245, 250, 245);
+                                  margin: 0px;
+                                  padding: 5px; 
+                                  align-items: center;
+                                }
+
+                .person {
+                           display: flex; 
+                           width: 90px;
+                           justify-content: flex-start;
+                           align-items: center;
+                        }                
+                                  
+                .Nderim_Data {height: 80px;}
+                a {font-size: 18px;}
+            } 
+ 
+
+            
+            
+            .parent {
+                  height: 800px;
+                  display: grid;
+                  grid-template: repeat(3, 1fr)r;
+                  column-gap: 35px;
+                  row-gap: 45px;
+                  font-family: "Radikal";
+                  padding: 40px;
+                 
+        }
+
+
+        .one {  
+                 padding: 0 50px;
+                 background-image: url(./assets/images/Sports/pexelsfield.jpg);
+                 grid-column: 1/3;
+                 grid-row: 1/2;
+                 text-align: justify;
+                 box-shadow: 0 0 10px rgba(12, 12, 12, 0.363); }
+
+        
+        .two { padding: 0 50px;
+               background-image: url(./assets/images/TECH/banner.jpg);
+               grid-column: 3/4;
+               grid-row: 1/3;
+               box-shadow: 0 0 10px rgba(12, 12, 12, 0.363);}
+
+        .three { padding: 0 50px;
+                 background-image: url(./assets/images/TRAVEL/Travel.jpg);
+                 grid-column: 2/4;
+                 grid-row: 3/4;
+                 box-shadow: 0 0 10px rgba(12, 12, 12, 0.363);}
+
+        .four { padding: 0 50px;
+                background-image: url(./assets/images/WORLD/world3.jpg);
+                grid-column: 1/2;
+                grid-row: 2/4;
+                box-shadow: 0 0 10px rgba(12, 12, 12, 0.363);}
+
+        .child { border: 1px solid rgb(255, 255, 255);}
+
+        p, span {font-family: "Radikal Light";}
+
+
+
+
+        .trajnimet {
+                    display: flex;
+                    flex-direction: row;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    height: 320px;
+                    padding: 10px;
+                    gap: 20px;
+                  }
+            
+        .trajnohu .trajnimet > div h4 span {
+                                            display: block;
+                                            color: #5b5c5e;
+                                           }
+
+        .titujt { 
+                font-size: 24px;
+                font-family: "Radikal";
+                } 
+    
+        .paragrafet {
+                    font-family: "Radikal Thin"; 
+                    font-size: 16px;
+                    }  
+        
+        .trajnimi {
+                    background-color: #e9ebee;
+                    padding: 0 30px;
+                    border-radius: 0 35px 0px 35px;
+                    width: 220px;   
+                    margin: 0px auto; 
+                    transition: all 0.5s ease-in-out;  
+                }
+
+        .da { background-image: url(./assets/images/datasymbol2.png);
+              box-shadow: 0 0 3px rgba(1, 1, 1, 0.363); }
+        .da:hover {background-image: url(./assets/images/dac.png);
+                   box-shadow: 0 10px 10px rgba(12, 12, 12, 0.363); }     
+        .de { background-image: url(./assets/images/de10.png);
+              box-shadow: 0 0 3px rgba(1, 1, 1, 0.363)}     
+        .de:hover { background-image: url(./assets/images/dec.png);
+                    box-shadow: 0 10px 10px rgba(12, 12, 12, 0.363);}
+        .ds { background-image: url(./assets/images/ds10.png);
+              box-shadow: 0 0 3px rgba(1, 1, 1, 0.363)}     
+        .ds:hover { background-image: url(./assets/images/dsd.png);
+                  box-shadow: 0 10px 10px rgba(12, 12, 12, 0.363); }   
+
+
+        .titulli, .nentitulli {text-align: center;}
+
+
+    </style>
+</head>
+<body>
+    <header id="header_background">
+        <a href="./MY_FIRST_REAL_PROJECT.html"> <img class="Nderim_Data" src="./assets/images/LOGO/Nderim's Data 3.png" class="logo" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="./MENU.html">Home</a></li>
+                <li> <a href="./TECH.html">Tech</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="./SPORTS.html">Sports</a></li>
+                <li><a href="./WORLD.html">World</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="./TRAVEL.html">Travel</a></li>
+                <li><a href="#">Other</a></li>      
+            </ul>
+            <!-- <img class="menu_tel" src="./assets/images/menu.png"  alt=""> -->
+        </nav>
+        <nav>
+            <img class="menu_tel" src="./assets/images/menu.png"  alt="">
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="BestWeb">The best new <br> web-site for;
+            <br>
+             <strong>DATA</strong>
+             <br>
+             <strong>STATISTICS </strong>
+             <br>
+             <strong>CORIOSITIES</strong>
+        </h2>    
+    </div>
+
+<br>
+
+<div class="parent">
+    <div class="child one">
+        <a href="./SPORTS.html">
+            <h1>SPORTS</h1>
+            <span>Sport pertains to any form of competitive physical activity or game that aims to use, maintain, or improve physical ability and skills while providing enjoyment to participants and, in some cases, entertainment to spectators. </span>
+            <p>Sports can, through casual or organized participation, improve participants physical health. </p>
+        </a>
+            
+    </div>
+    <div class="child two">
+        <a href="./TECH.html">
+            <h1>TECH</h1>
+            <span>Technology is the application of knowledge for achieving practical goals in a reproducible way.</span>
+            <p>The word technology can also mean the products resulting from such efforts, including both tangible tools such as utensils or machines, and intangible ones such as software. </p>
+            <span>Technology plays a critical role in science, engineering, and everyday life.</span>
+        </div>
+        </a>
+    <div class="child three">
+        <h1>TRAVEL</h1>
+        <p>Travel is the movement of people between distant geographical locations. </p>
+        <span>Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip.</span>
+    </div>
+    <div class="child four">
+        <h1>WORLD</h1>
+        <span>In its most general sense, the term "world" refers to the totality of entities, to the whole of reality or to everything that is.</span>
+        <p>
+            The nature of the world has been conceptualized differently in different fields. Some conceptions see the world as unique while others talk of a "plurality of worlds".
+        </p>
+        <span>
+            Some treat the world as one simple object while others analyze the world as a complex made up of many parts.
+        </span>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section class="trajnohu">
+    <h2 class="titulli">WE OFFER A VARIETY OF TRAINING</h2> 
+
+    <div class="trajnimet">
+        <div class="trajnimi da">
+            <h4 class="titujt"> Data <span>Analyst</span></h4>
+            <p class="paragrafet">A data analyst is responsible for analysing
+                data and presenting it in a way that is useful
+                for making business decisions.
+            </p>
+        </div>
+        <div class="trajnimi de">
+            <h4 class="titujt">Data <span>Engineer</span></h4>
+            <p class="paragrafet">Focuses on the infrastructure and tools
+                needed to store, process, and analyse large
+                amounts of data.
+            </p>
+        </div>
+        <div class="trajnimi ds">
+            <h4 class="titujt">Data <span>Scientist</span></h4>
+            <p class="paragrafet">A data scientist combines the skills of
+                both a data analyst and a data engineer, with a
+                focus on using statistical and machine learning
+                techniques to analyse and understand
+                complex data sets.
+            </p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH</title>
+    <style>
+
+
+      /*HEADER*/
+      ul { list-style-type: none;
+           display: flex;
+           }
+
+           a { text-decoration: none; 
+            color: black;
+            text-align: left;}
+
+      li { margin-left: 25px;
+            font-family: system-ui;}
+
+      .menu_tel {display: none; height: 55px;}
+
+
+                /* desktop */
+                @media (min-width: 925px)
+            {
+                header { height: 70px;
+                         padding: 0 50px;
+                         background-color: rgb(227, 236, 245);
+                         display: flex;
+                         justify-content: space-around;
+                         flex-direction: row;
+                         align-items: center;
+                        }
+
+               .PREMIER_LEAGUE {margin: 10px;}    
+                 
+               .all_desktop { 
+                              display: flex;    
+                              padding: 20px 10px;
+                              border-bottom:2pt solid rgb(200, 200, 200);
+                              border-top: 2px solid rgb(200, 200, 200);
+                              background-color: rgb(240, 240, 240);
+                              justify-content:center;
+                            }         
+
+               .rrjetet_sociale { display: flex;
+                                  justify-content: center;
+                                  background-color: rgb(245, 250, 245);
+                                  margin: 0px;
+                                  padding: 5px; 
+                                  align-items: center;
+                                }
+
+                .person {
+                           display: flex; 
+                           width: 90px;
+                           justify-content: flex-start;
+                           align-items: center;
+                        }                
+
+                .fb_logo {width: 25px;}
+                                  
+                .Nderim_Data {height: 80px;}
+                a {font-size: 18px;}
+                .LIGAT_DESKTOP {display: inline-block;}
+
+                   /* ALERT */
+                .alert_alert {display: flex;
+                       justify-content: center; }
+
+                    .alert_table { font-size: 18px;
+                             text-align: center; 
+                             margin: 10px 50px;
+                             width: 260px; 
+                             border-collapse: collapse;    
+                             border-bottom: 1px solid rgb(245, 241, 241);       
+                             display: flex;}
+
+                    .alert1 { font-size: 24px;
+                             background-color: black;
+                             color: rgb(252, 122, 128);
+                             padding: 10px;}
+
+                    .alertimg  {width: 33px; padding: 1px 5px;  padding: 11px;}
+                    .guglli    {background-color: rgb(245, 241, 241);}
+                    .img_alertgif {width: 300px;}
+            } 
+
+
+            .M2 {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+            }
+    </style>
+</head>
+<body>
+
+     <!--  HEADER -->
+    <header id="header_background">
+        <a href="./MY_FIRST_REAL_PROJECT.html"> <img class="Nderim_Data" src="./assets/images/LOGO/Nderim's Data 3.png" class="logo" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="./MENU.html">Home</a></li>
+                <li> <a href="#">Tech</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="./SPORTS.html">Sports</a></li>
+                <li><a href="./WORLD.html">World</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Other</a></li>      
+            </ul>
+            <!-- <img class="menu_tel" src="./assets/images/menu.png"  alt=""> -->
+        </nav>
+        <nav>
+            <img class="menu_tel" src="./assets/images/menu.png"  alt="">
+        </nav>
+    </header>
+
+
+
+    <!--ALERT-->
+<div class="alert_alert">
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img class="img_alertgif" src="./assets/images/LOGO/alert-blink.gif">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table class="alert_table">
+            <tr>
+                <th  class="alert1"  colspan="3" rowspan="2" > Breaking News Alert:   <strong class="strong">Tech giants are firing </strong></th>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td> <img class="alertimg" src="./assets/images/LOGO/Microsoft_logo.png" alt=""></td>
+                <td>Microsoft</td>
+                <td>10,000</td> 
+            </tr>
+            <tr class="guglli">
+                <td > <img  class="alertimg" src="./assets/images/LOGO/gLogo1x1.png" alt=""></td>
+                <td =>Google</td>
+                <td>12,000</td>
+            </tr>
+            <tr>
+                <td><img class="alertimg" src="./assets/images/LOGO/Amazon_icon.png" alt=""></td>
+                <td>Amazon</td>
+                <td>18,000</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img class="img_alertgif" src="./assets/images/LOGO/alert-blink.gif">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+<div class="M2">
+     <h2>Apple launched M2 processor for Macbook Pro & Max</h2>
+     <div>
+        <ul>
+            <li> <img class="M2prc" src="./assets/images/TECH/Macbook M2.jpg" alt=""></li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            
+        </ul>
+     </div>
+</div>
+</body>
+</html>

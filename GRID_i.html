@@ -7,39 +7,36 @@
     <title>GRID_I</title>
 
     <style>
- 
-        .item-1 {grid-area: header;}
-        .item-2 {grid-area: main;}
-        .item-3 {grid-area: sidebar;}
-        .item-4 {grid-area: footer;} 
 
-        .container {
+        .container {margin: 20px auto;
                     display: grid;
-                    grid-template-columns: 50px 50px 50px 50px;
-                    grid-template-rows:  auto;
-                    grid-template-areas: 
-                    "header header header header"
-                    "main main . sidebar"
-                    "footer footer footer footer";
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows:  1fr;
                     column-gap: 10px;
-                    row-gap: 10px;
+                    row-gap: 15px;
+                    gap: 15px 10px;
+                    align-items: center;
+                    background-color: rgb(192, 192, 192);
+                    width: 800px;
+                    
+                    
                    }
-
-
-
-        .item { border: 1px solid black; padding: 5px;}
-
-
+         img {width: 150px;}   
+         .item {border: 1px solid black;
+            }        
+      
+            a {text-decoration: none;}
 
     </style>
 
 </head>
 <body>
     <div class="container">
-        <div class="item item-1"> Menu </div>
-        <div class="item item-2"> 2 </div>
-        <div class="item item-3"> 3 </div>
-        <div class="item item-4"> 4 </div>
+        <div class="item item-1"> <img src="./assets/images/LOGO/Nderim's Data 3.png" alt=""></div>
+        <div class="item item-2"> <a href="#">MENU</a> </div>
+        <div class="item item-3"> <a href="#">SPORTS</a> </div>
+        <div class="item item-4"> <a href="#">SCIENCE</a> </div>
+        <div class="item item-5"> <a href="#">OTHER</a> </div>
     </div>
 </body>
 </html>

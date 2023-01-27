@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .goalscorer_pl_grid {
+                     display: grid;
+                     grid-template-columns: repeat(3, 1fr);
+                     gap: 10px;
+                   }
+        
+        .team-cart {
+                    align-items: center;    
+                    justify-self: center;  
+                    padding: 5px;  
+                    border-radius: 25px 25px 0 0; 
+                    background-color: #eceef3;
+                    text-align: center;     
+                    /* background-image: url(./assets/images/Player/background_gif.gif);   */    
+                   }
+                            
+        img {width: 80%;}
+
+        span { color: #1743b4; }
+
+        .topgl {
+                 text-align: center;
+                 background-color: #efeff1;
+                 border-radius: 5px 25px 0 25px;
+                 padding: 8px 0 ; 
+                 font-size: 35px;
+               }
+
+        .player_name {font-size: 20px;}  
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <section id="goalscorer" class="goalscorer">
+        <div class="container">
+            <h1 class="topgl">TOP goal scorers Premier League</h1>
+            <div class="goalscorer_pl_grid">
+                <div class="team-cart">
+                    <img src="./assets/images/Player/Haaland.png" alt="">
+                    <h4 class="player_name"> Erling Haaland </h4>
+                    <p>25 Goals</p>
+                    <span>3 Assists</span>
+                </div>
+                <div class="team-cart">
+                    <img src="./assets/images/Player/Harry Kane.webp" alt="">
+                    <h4 class="player_name">Harry Kane</h4>
+                    <p>16 Goals</p>
+                    <span>1 Assist</span>
+                </div>
+                <div class="team-cart">
+                    <img src="./assets/images/Player/Ivan Toney.png" alt="">
+                    <h4 class="player_name">Ivan Toney</h4>
+                    <p>13 Goals</p>
+                    <span>3 Assists</span>
+                </div>
+                <div class="team-cart">
+                    <img src="./assets/images/Player/Aleksandar Mitrovic.png" alt="">
+                    <h4 class="player_name">Aleksandar Mitrovic</h4>
+                    <p>11 Goals</p>
+                    <span>1 Assist</span>
+                </div>
+                <div class="team-cart">
+                    <img src="./assets/images/Player/Rodrigo.png" alt="">
+                    <h4 class="player_name">Rodrigo</h4>
+                    <p>10 Goals</p>
+                    <span>1 Assist</span>
+                </div>
+                <div class="team-cart">
+                    <img src="./assets/images/Player/Marcus Rashford.png" alt="">
+                    <h4 class="player_name">Marcus Rashford</h4>
+                    <p>9 Goals</p>
+                    <span>3 Assists</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
